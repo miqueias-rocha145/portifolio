@@ -8,8 +8,15 @@ function ativaLetra(elemento){
     });
 }
 
-const titulo = document.querySelector('.digitando')
-
+const titulo = document.querySelector('.digitando');
 ativaLetra(titulo);
+
+
+const ativaMenu = document.querySelector('.menu-icon');
+
+ativaMenu.addEventListener('click', ()=>{
+    ativaMenu.classList.toggle('fa-bars');
+    ativaMenu.classList.toggle('fa-xmark');
+})
 
 
