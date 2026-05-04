@@ -126,8 +126,6 @@ header .navegacao-primaria li a{
 /*SEÇÃO PRINCIPAL SOBRE MIM*/
 main{
     background-color: #141414;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
     padding: 0 20px;
 }
 
@@ -314,13 +312,73 @@ main .sobre{
 
 .my_service ul li{
     cursor: pointer;
+    border-radius: 6px;
     position: relative;
     padding: 10px;
     display: grid;
     gap: 30px;
     text-align: center;
-    max-width: 300px;
+    max-width: 300px;;
     height: 300px;
     background-color: #222;
+    align-content: center;
 }
 
+.my_service ul li i{
+    justify-self: center;
+    color: #dc3545;
+    font-size: 2.5rem;
+}
+
+.my_service ul li h3{
+    color: #fff;
+    font-size: 1.3rem;
+    font-family: 'poppins';
+    font-weight: 500;
+}
+
+.my_service ul li p{
+    color: #707070;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.my_service li::before{
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+}
+
+.my_service li::after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+}
+
+.my_service li:hover::before{
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid red;
+    border-right: 2px solid red;
+}
+
+.my_service li:hover::after{
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid red;
+    border-left: 2px solid red;
+}
