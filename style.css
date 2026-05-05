@@ -419,3 +419,33 @@ main .sobre{
     border-bottom: 2px solid red;
     border-left: 2px solid red;
 }
+
+/*SEÇÃO RESUME*/
+
+.my_resume{
+    color: #ffff;
+}
+
+.resume_generica{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 10px;
+    align-items: start;
+}
+
+.resume_generica h2{
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    background-color: #ff5d56;
+    justify-self: start;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+
+.resume_generica h2 i{
+    margin-right: 10px;
+}
+
