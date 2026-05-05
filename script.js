@@ -13,10 +13,13 @@ ativaLetra(titulo);
 
 
 const ativaMenu = document.querySelector('.menu-icon');
+const navMenu = document.querySelector('header .navegacao-primaria');
+
 
 ativaMenu.addEventListener('click', ()=>{
     ativaMenu.classList.toggle('fa-bars');
     ativaMenu.classList.toggle('fa-xmark');
+    navMenu.classList.toggle('ativado');
 })
 
 
