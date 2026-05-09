@@ -147,7 +147,7 @@ main{
 }
 
 main .sobre{
-    margin-top: 60px;
+    margin-top: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -567,3 +567,5 @@ main .sobre{
     color: #707070;
     font-size: 1.1rem;
 }
+
+/*CURIOSIDADES E SKILLS*/
