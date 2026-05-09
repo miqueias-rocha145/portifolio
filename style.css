@@ -449,15 +449,11 @@ main .sobre{
     margin-right: 10px;
 }
 
+/*MINHAS EXPERIÊNCIAS*/
+
 .experience{
     margin-bottom: 30px;
     grid-column: 1;
-    grid-row: 1;
-}
-
-.education{
-    margin-bottom: 30px;
-    grid-column: 2;
     grid-row: 1;
 }
 
@@ -469,19 +465,17 @@ main .sobre{
     margin-top: 20px;
     justify-content: center;
 }
-.education_content ul{
-    color: #ff5d56;
-    gap: 10px;
-    display: flex;
-    cursor: pointer;
-    margin-top: 20px;
-    justify-content: center;
-}
 
 .resume_generica .experience_content div{
     background-color: #222;
+    animation: ladoSecao .5s ease-in-out forwards;
+    display: none;
     padding: 40px;
     position: relative;
+}
+
+.resume_generica .experience_content div.ativo{
+    display: block;
 }
 
 .resume_generica .experience_content div::before{
@@ -510,13 +504,43 @@ main .sobre{
     font-size: 1.1rem;
 }
 
+.experience_content ul li.ativo{
+    color: #3e3d3d;
+}
+
 /*MEUS DIPLOMAS E CURSOS*/
+
+.education{
+    margin-bottom: 30px;
+    grid-column: 2;
+    grid-row: 1;
+}
 
 .resume_generica .education_content div{
     background-color: #222;
+    display: none;
+    animation: ladoSecao .5s ease-in-out forwards;
     padding: 40px;
     position: relative;
 }
+
+.education_content ul{
+    color: #ff5d56;
+    gap: 10px;
+    display: flex;
+    cursor: pointer;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.resume_generica .education_content div.ativo{
+    display: block;
+}
+
+.education_content ul li.ativo{
+    color: #3e3d3d;
+}
+
 
 .resume_generica .education_content div::before{
     content: '';
