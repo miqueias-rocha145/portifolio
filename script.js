@@ -78,6 +78,83 @@ sobreMim()
 
 
 
+const listaALL = document.querySelectorAll('.projects_armazenamento ul li');
+const buttonGeral = document.querySelectorAll('.projects_models ul li');
+const buttonALL = document.querySelector('.projects_models .all');
+
+listaALL.forEach((item)=>{
+    item.classList.add('ativo');
+})
+
+function removeClick(index){
+    buttonGeral.forEach((item)=>{
+        item.classList.remove('ativo');
+    })
+    buttonGeral[index].classList.add('ativo')
+}
+
+buttonGeral.forEach((event,index)=>{
+    event.addEventListener('click', ()=>{
+        removeClick(index)
+    })
+})
+
+function showLista(lista, buttom = "all"){
+    lista.forEach((item)=>{
+        item.classList.remove('ativo');
+    });
+
+    if(buttom == 'design'){
+        lista[0].classList.add('ativo')
+        lista[1].classList.add('ativo')
+    }
+    if(buttom == 'graphic'){
+        lista[2].classList.add('ativo');
+        lista[3].classList.add('ativo');
+    }
+
+    if(buttom == 'website'){
+        lista[4].classList.add('ativo');
+        lista[5].classList.add('ativo');
+        lista[6].classList.add('ativo');
+        lista[7].classList.add('ativo');
+    }
+
+    if(buttom == 'all'){
+        lista[0].classList.add('ativo')
+        lista[1].classList.add('ativo')
+        lista[2].classList.add('ativo');
+        lista[3].classList.add('ativo');
+        lista[4].classList.add('ativo');
+        lista[5].classList.add('ativo');
+        lista[6].classList.add('ativo');
+        lista[7].classList.add('ativo');
+    }
+}
+
+buttonGeral.forEach((item)=>{
+    item.addEventListener('click', (e)=>{
+        let currentButton = e.target;
+        if(currentButton.classList.contains('all')){
+            showLista(listaALL);
+        } if(currentButton.classList.contains('design')){
+            showLista(listaALL, "design")
+        }
+
+        if(currentButton.classList.contains('graphic')){
+            showLista(listaALL, "graphic")
+        }
+
+        if(currentButton.classList.contains('website')){
+            showLista(listaALL, "website")
+        }
+
+        if(currentButton.classList.contains('all')){
+            showLista(listaALL, "all")
+        }
+    });
+});
+
 
 
 
