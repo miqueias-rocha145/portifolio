@@ -770,3 +770,54 @@ main .sobre{
     }
 }
 
+/*FOOTER*/
+
+footer{
+    background-color: #000000;
+    padding: 30px;
+}
+
+.footer_sociais{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    color: #f7f7f7;
+}
+
+.footer_sociais li{
+    background-color: #212020;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
+
+.footer_sociais li i{
+    padding: 30px;
+    font-size: 1.5rem;
+    color: #f7f7f7;
+}
+
+.footer_sociais li:hover{
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    background-color: #3e3d3d;
+}
+
+.footer_sociais::before{
+    content: '';
+    height: 5px;
+    width: 200px;
+    position: absolute;
+    bottom: -30px;
+    background-color: #222;
+}
+
+footer .footer_comercial {
+    text-align: center;
+    color: #ffff;
+    margin: 90px auto;
+    font-size: .9rem;
+    font-family: 'Poppins';
+}
