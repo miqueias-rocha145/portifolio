@@ -154,9 +154,3 @@ buttonGeral.forEach((item)=>{
         }
     });
 });
-
-
-
-
-
-
