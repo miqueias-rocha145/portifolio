@@ -816,3 +816,66 @@ footer .footer_comercial {
     font-size: .9rem; 
     font-family: 'Poppins'; 
 }
+
+/* RESPONSIVIDADE MOBILE */
+@media (max-width: 768px){
+
+    /* Seção projetos */
+    .projects{
+        padding: 20px 10px;
+    }
+
+    /* Botões dos filtros */
+    .projects_models ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .projects_models ul li{
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    /* Grid dos projetos */
+    .projects_armazenamento ul{
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+
+    .projects_armazenamento ul li{
+        width: 100%;
+    }
+
+    .projects_armazenamento ul li img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Skills */
+    .cursos .my_skill{
+        text-align: center;
+    }
+
+    .skill_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+
+    .skill_content ul{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Footer */
+    footer{
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+}
