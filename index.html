@@ -18,8 +18,9 @@
             <ul aria-label="Navegação Primária" class="navegacao-primaria">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">Sobre mim</a></li>
-                <li><a href="#resume">Resumo</a></li>
-                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portifolio">Portifólio</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
             <i class="fa-solid fa-bars menu-icon"></i>
         </nav>
@@ -31,7 +32,7 @@
                 Bem-vindos ao meu portfólio! Aqui você encontrará meus projetos, experiências e habilidades
                 desenvolvidas nas áreas de tecnologia, desenvolvimento e análise de dados.
             </p>
-            <a href="#">Download CV</a>
+            <a href="docs/CV_MIQUEIAS.pdf" download>Download CV</a>
         </div>
     </section>
     <main>
@@ -97,7 +98,7 @@
             </ul>
         </div>
     </section>
-    <div class="my_resume" id="resume">
+    <div class="my_resume" id="formacao">
         <div class="sobre_titulo">
             <h1>Meu Resumo</h1>
             <p>Breve resumo das minhas formações e experiências</p>
@@ -248,7 +249,7 @@
             </div>
         </div>
     </div>
-    <section class="projects" id="projetos">
+    <section class="projects" id="portifolio">
         <div class="sobre_titulo">
             <h1>Meus Projetos</h1>
             <p>Exibição de todos os meus projetos.</p>
@@ -286,6 +287,25 @@
                         target="_blank"><img src="img/simuladorCaos.png"
                             alt="Projeto que simula caos em academias criado usando python"></a></li>
             </ul>
+        </div>
+    </section>
+    <section class="contato" id="contato">
+        <div class="sobre_titulo">
+            <h1>Contato</h1>
+            <p>Sinta-se à vontade para enviar uma mensagem</p>
+            <div aria-label="Seção de ilustração de botões">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="contato_form">
+            <form action="https://formsubmit.co/mimimiqueias82@gmail.com" method="POST">
+                <input type="text" name="Nome" placeholder="Nome" required>
+                <input type="email" name="Email" placeholder="E-mail" required>
+                <textarea name="Mensagem" cols="30" rows="10" placeholder="Mensagem" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
         </div>
     </section>
     <footer>
